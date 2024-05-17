@@ -3,17 +3,16 @@ import random
 pole1 = []
 pole2 = []
 
-def nahodny_pocet (prv):
-    global pole1
-    global pole2
-    for i in range(random.randint(1,10)):
-        pole1.append(random.randint(1,20))
-        pole1.sort
-    for a in range(random.randint(1,10)):
-        pole2.append(random.randint(1,20))
-        pole2.sort
+def nahodny_pocet (prvek,prvek2):
 
-nahodny_pocet()
+    for i in range(random.randint(1,10)):
+        prvek.append(random.randint(1,20))
+        prvek.sort()
+    for a in range(random.randint(1,10)):
+        prvek2.append(random.randint(1,20))
+        prvek2.sort()
+
+nahodny_pocet(pole1,pole2)
 
 if len(pole1) > len(pole2):
     print ("První pole má větši delku!")
